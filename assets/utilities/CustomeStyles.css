@@ -102,6 +102,19 @@
   animation: scale 1s linear 0s infinite alternate-reverse;
 }
 
+.preloader-text {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid white;
+  animation: typing 0.4s steps(18) cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /* navbar */
 
 .nav-item {
@@ -138,6 +151,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(1.1);
+  transition: 5s ease-in infinite;
 }
 
 .super-text-container {
