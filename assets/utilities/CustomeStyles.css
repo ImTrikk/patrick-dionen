@@ -160,8 +160,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(1.05);
-  transition: 5s ease-in infinite;
 }
 
 .super-text-container {
