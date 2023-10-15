@@ -24,73 +24,69 @@
   </head>
   <body>
     <!-- Navbar -->
-    <section>
-      <nav
-        class="navbar fixed-top navbar-expand-lg navbar-light bg-dark"
-        data-aos="fade-down"
-      >
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><strong class="text-white"><em>TRIKK.DEV</em></strong></a
-          >
-          <button
-            class="navbar-toggler collapsed bg-white"
-            style="width: 30; height: 35px"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link fw-light fs-6 text-white" href="#super-hero"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-light fs-6 text-white" href="#about-page"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-light fs-6 text-white" href="#stack-page"
-                  >Stack</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-light fs-6 text-white"
-                  href="#skills-page"
-                  >Skills</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-light fs-6 text-white"
-                  href="#project-page"
-                  >Projects</a
-                >
-              </li>
-            </ul>
-          </div>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><strong class="text-white"><em>TRIKK.DEV</em></strong></a
+        >
+        <button
+          class="navbar-toggler collapsed bg-white"
+          style="width: 30; height: 35px"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-light fs-6 text-white" href="#super-hero"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-light fs-6 text-white" href="#about-page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-light fs-6 text-white" href="#stack-page"
+                >Stack</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-light fs-6 text-white" href="#skills-page"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-light fs-6 text-white" href="#project-page"
+                >Projects</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
-    </section>
+      </div>
+    </nav>
+    <!-- preloader -->
+    <div id="preloader" class="fixed bg-dark m-0" data-hidden="true">
+      <div class="container">
+        <div class="spinner-block">
+          <div class="spinner spinner-2"></div>
+        </div>
+        <p class="text-white text-center">Loading assets...</p>
+      </div>
+    </div>
     <!-- Super section -->
-    <section
-      id="super-hero"
-      class="bg-dark"
-      data-aos="fade-down"
-      data-aos-delay="500"
-    >
+    <section id="super-hero" class="bg-dark">
       <div id="super-section" class="container">
-        <div class="super-hero-section" data-aos="fade-up" data-aos-delay="500">
-          <div class="super-text-container" data-aos="fade-up">
+        <div class="super-hero-section">
+          <div class="super-text-container">
             <p class="fs-5 fw-semibold text-white">
               PatrickJamesDionen
               <span class="fs-2 fw-medium text-white">{</span>
@@ -180,7 +176,7 @@
         </div>
         <div class="container">
           <div class="row gap-2">
-            <div class="col-lg-5 pt-3">
+            <div class="col-lg-5 pt-3" data-aos="fade-right">
               <div class="">
                 <p class="m-0">Hi! I am</p>
                 <h2 class="m-0 fs-5 fw-bolder">Patrick James Dionen</h2>
@@ -198,13 +194,11 @@
               </div>
               <div class="mt-5">
                 <a href="/pages/certifications.html">
-                  <button class="btn btn-md btn-dark display-6">
-                    Certifications
-                  </button>
+                  <button class="btn btn-md btn-dark display-6">view</button>
                 </a>
               </div>
             </div>
-            <div class="col pt-3 pb-5">
+            <div class="col pt-3 pb-5" data-aos="fade-left">
               <div class="bg-dark rounded float-end">
                 <img
                   src="/assets/images/TRIKK.png"
@@ -218,11 +212,12 @@
         </div>
       </div>
       <br /><br />
+      <br /><br />
     </section>
     <!-- Technology Stacks -->
     <section id="stack-page" class="pt-5 bg-dark pb-5">
       <br /><br />
-      <div class="container pt-5" data-aos="fade-up" data-aos-delay="600">
+      <div class="container pt-5" data-aos="fade-up" data-aos-delay="700">
         <div class="row align-items-center">
           <div class="col-lg-3">
             <h1 class="fw-bolder display-6">
@@ -233,6 +228,7 @@
           </div>
           <div class="col"><hr /></div>
         </div>
+        <br /><br /><br />
         <div class="row gap-5">
           <div class="col-lg-5 pt-5">
             <p class="fs-5 fw-bold">
@@ -252,9 +248,11 @@
               >
             </div>
           </div>
-          <div class="t-5 col-lg-6">
+          <div class="col-lg-6">
             <div
               class="row gap-2 align-items-center justify-content-center p-2"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
             >
               <div class="tech-bg-icon col-3 col-md-2 bg-white shadow-sm">
                 <img
@@ -330,9 +328,9 @@
               </div>
               <div class="tech-bg-icon col-3 col-md-2 bg-white shadow-sm">
                 <img
-                  src="/assets/compressed/logos_figma-min.webp"
+                  src="/assets/compressed/Group 84figma.png"
                   alt=""
-                  width="50px"
+                  width="40px"
                 />
               </div>
               <div class="tech-bg-icon col-3 col-md-2 bg-white shadow-sm">
@@ -382,17 +380,29 @@
               </div>
               <div class="tech-bg-icon col-3 col-md-2 bg-white shadow-sm">
                 <img
+                  src="/assets/compressed/Vectorgit.png"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="tech-bg-icon col-3 col-md-2 bg-white shadow-sm">
+                <img
                   src="/assets/compressed/skill-icons_vite-light-min.webp"
                   alt=""
                   width="50px"
                 />
+              </div>
+              <div class="tech-bg-icon col-3 col-md-2 bg-white shadow-sm">
+                <img src="/assets/compressed/npm.png" alt="" width="50px" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <br /><br />
-      <br /><br /><br>
+      <br /><br /><br />
     </section>
     <!-- Skills offered -->
     <section id="skills-page" class="bg-body-tertiary pt-5">
@@ -431,7 +441,7 @@
                 <div class="pt-2 row align-items-center justify-content-center">
                   <div class="col-md-4 display-3 fw-bolder">02</div>
                   <div class="col-md-7 fs-4 fw-semibold">
-                    Full Stack Development
+                    Full Stack Developer
                   </div>
                 </div>
                 <div class="mb-5">
@@ -452,6 +462,57 @@
                   <div class="col-md-7 fs-4 fw-semibold">
                     Wireframe & Prototype
                   </div>
+                </div>
+                <div class="mb-5">
+                  <hr />
+                </div>
+                <p class="pt-3 card-text mb-5 text-center">
+                  I create wireframes and build prototypes for stakeholders to
+                  see and understand the feasability of the project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pt-3">
+            <div class="card shadow-lg h-100">
+              <div class="card-body service-card rounded align-items-center">
+                <div class="pt-2 row align-items-center justify-content-center">
+                  <div class="col-md-4 display-3 fw-bolder">04</div>
+                  <div class="col-md-8 fs-4 fw-semibold">Graphic Designs</div>
+                </div>
+                <div class="mb-5">
+                  <hr />
+                </div>
+                <p class="pt-3 card-text mb-5 text-center">
+                  I create wireframes and build prototypes for stakeholders to
+                  see and understand the feasability of the project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pt-3">
+            <div class="card shadow-lg h-100">
+              <div class="card-body service-card rounded align-items-center">
+                <div class="pt-2 row align-items-center justify-content-center">
+                  <div class="col-md-4 display-3 fw-bolder">05</div>
+                  <div class="col-md-7 fs-4 fw-semibold">Programming</div>
+                </div>
+                <div class="mb-5">
+                  <hr />
+                </div>
+                <p class="pt-3 card-text mb-5 text-center">
+                  I create wireframes and build prototypes for stakeholders to
+                  see and understand the feasability of the project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pt-3">
+            <div class="card shadow-lg h-100">
+              <div class="card-body service-card rounded align-items-center">
+                <div class="pt-2 row align-items-center justify-content-center">
+                  <div class="col-md-4 display-3 fw-bolder">06</div>
+                  <div class="col-md-7 fs-4 fw-semibold">Video Editting</div>
                 </div>
                 <div class="mb-5">
                   <hr />
@@ -654,11 +715,22 @@
         </div>
       </div>
     </section>
-    <!-- <script
-   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-   crossorigin="anonymous"
-  ></script> -->
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        // Disable scrolling
+        document.body.classList.add("no-scroll");
+
+        // Add a delay of 3000 milliseconds (3 seconds)
+        setTimeout(function () {
+          loader.style.display = "none";
+
+          // Enable scrolling after 3 seconds
+          document.body.classList.remove("no-scroll");  
+        }, 4000);
+      });
+    </script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/utilities/js/bootstrap.bundle.min.js"></script>
