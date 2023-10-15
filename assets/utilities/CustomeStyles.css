@@ -103,18 +103,25 @@
 }
 
 .preloader-text {
+  display: inline-block;
+  letter-spacing: 4px;
   white-space: nowrap;
   overflow: hidden;
   border-right: 5px solid white;
-  animation: typing 0.4s steps(18) cursor 0.4s step-end infinite alternate;
+  animation: typing 0.4s steps(18), blink-cursor 0.8s step-end infinite;
 }
 
-@keyframes cursor {
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-cursor {
   50% {
     border-color: transparent;
   }
 }
-
 /* navbar */
 
 .nav-item {
